@@ -157,6 +157,7 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
+    box-shadow: 0px 0px 14px black;
 }
 aside {
     background-color: #f20519e3;
