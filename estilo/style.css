@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Brandy';
+    src: url('fonts/Brandy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Brandy', Times, serif;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Bebas', Times, serif;
+}
+:root {
+    --cor0: #A89593;
+    --cor1: white;
+    --cor2: #D2232A;
+    --cor3: #000000;
+    --cor4: #8C0410;
+    --cor5: #F20530;
+    --cor6: #F20519;
+
+    --fonte-destaque: 'Bebas', Times, serif;
+    --fonte-padrao:'Brandy', Times, serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: linear-gradient(to bottom, #0D0D0D, #BF0615, #BF0615, #0D0D0D);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to right, #0D0D0D, #BF0615, #BF0615, #0D0D0D);
+    min-height: 105px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    margin-top: -17px;
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.671);
+}
+header > p {
+    color: white;
+    font-size: 1.0em;
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+}
+nav {
+    background-image: linear-gradient(to right, #0D0D0D, #BF0615, #BF0615, #0D0D0D);
+    padding: 19px;
+    box-shadow: 1px 5px 9px rgba(0, 0, 0, 0.418);
+}
+nav > a {
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+nav > a:hover {
+    background-color: #bf061596;
+    color: black;
+}
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main h1 {
+    color: #ad080f;
+    font-family: var(--fonte-padrao);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+main h2 {
+    color: #ad0810eb;
+    font-family: var(--fonte-padrao);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, #bf061575, transparent);
+    text-indent: 8px;
+    margin-bottom: 10px;
+}
+main p {
+    margin: 17px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+main strong {
+    color: black;
+    font-weight: bold;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #BF0615;
+    padding: 1px 4px;
+}
+main a:hover {
+    text-decoration: underline;
+    color: black;
+    background-color: #BF0615;
+}
+
+/* Estilos atualizados para imagens responsivas */
+main img, aside img {
+    width: 63%;
+    height: auto;
+    padding: 0px;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 14px black;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 600px) {
+    main img, aside img {
+        width: 100%;
+    }
+}
+
+div.video {
+    background-color: #BF0615;
+    margin: 9px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside {
+    background-color: #f20519e3;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #000000e0;
+}
+aside h3 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: -10px -8px 0px -8px;
+    border-radius: 10px 10px 0px 0px;
+}
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #BF0615;
+}
