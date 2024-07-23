@@ -10,39 +10,54 @@
 }
 * {
     margin: 0px;
-    padding: 0px
+    padding: 0px;
 }
 html, body {
     min-height: 100vh;
+    background-color: darkgrey;
     font-family: var(--fonte1);
 }
 header {
-    background-image: linear-gradient(to bottom, #0D0D0D, #BF0615, #BF0615, #0D0D0D);
-    
-}
-header > h1{
-    padding-top: 50px;
-    text-align: center;
+    background-color: black;
     color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 44px;
+    font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 7vw;
+    font-size: 11vw;
 }
 header > p {
     padding-bottom: 50px;
-    text-align: center;
-    font-size: 0.9em;
-    color: white;
+    font-size: 1em;
 }
 header a, footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
+     color: white;
+     text-decoration: none;
+     font-weight: bolder;
 }
 header a:hover, footer a:hover {
     text-decoration: underline;
-    color: white;
 }
-section{
+nav {
+    background-color: black;
+    padding: 12px;
+    box-shadow: 1px 5px 9px rgba(0, 0, 0, 0.418);
+}
+nav > a {
+    color: white;
+    padding: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+nav > a:hover {
+    background-color: white;
+    color: black;
+}
+section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -51,13 +66,15 @@ section{
     font-size: 3.5vw;
 }
 section.normal {
-    background-color: aqua;
+    background-image: linear-gradient(to right, #bf0615, #0d0d0de8);
+    color: white;
 }
 section.imagem {
-    background-color: rgb(0, 255, 0);
+    background-color: rgb(80, 56, 20);
+    color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.418);
+    background-size: cover;
     background-attachment: fixed;
-    background-position: center;
 }
 section.imagem > p {
     display: inline-block;
@@ -68,10 +85,16 @@ section.imagem > p {
 section > p {
     padding-bottom: 2em;
 }
-section#imagem01 {
-    background-image: url('imagens/zico\ maracana.jpg');
+section#img001 {
+    background-image: url('../imagens/zico\ maracana.jpg');
+       
+}
+section#img002 {
+    background-image: url('../imagens/zico\ mundial.jpg');   
 }
 footer {
     background-color: black;
-    padding: 10px;
+    text-align: center;
+    color:  white;
+    padding: 5px;
 }
