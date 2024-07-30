@@ -88,8 +88,10 @@ main {
 }
 main h1, caption {
     
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao);
     font-weight: normal;
+    background-image: linear-gradient(to bottom, red, white);
+    color: #BF0615;
     
 }
 main h2 {
@@ -146,6 +148,11 @@ th {
     width: 30px; /* Define a largura fixa para o número */
     text-align: right; /* Alinha o número à direita dentro do bloco */
     margin-right: 8px; /* Ajusta o espaçamento entre o número e o nome */
+}
+iframe {
+    display: block;
+    margin: auto;
+    width: 500px;
 }
 footer {
     background-color: #0D0D0D;
