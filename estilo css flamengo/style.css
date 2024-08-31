@@ -278,5 +278,7 @@ section#redes-socias img:hover {
 .tex-animado > p {
     text-align: left; 
     color: white; 
-    text-indent: 10px
+    text-indent: 10px;
+    font-size: 11px ;
+    
 }
