@@ -77,5 +77,23 @@
         </section>
         <p>O site foi desenvolvido por <a href="https://www.instagram.com/night_njr/" target="_blank">Nilson</a> e <a href="https://www.instagram.com/luiz.frnd_/" target="_blank">Luiz</a>.</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const title = document.querySelector("header > h1");
+            const text = title.textContent;
+            let i = 0;
+            title.textContent = "";
+            function type() {
+                if (i < text.length) {
+                    title.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 150);
+                }
+            }
+            type();
+        });
+            
+     
+    </script>
 </body>
 </html>
