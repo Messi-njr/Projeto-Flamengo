@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Flamengo</h1>
+        <h1>FLANEWS</h1>
         <p>Tudo sobre o mais querido do mundo, o rubro negro nunca para.</p>
         <section id="redes-socias">
             <a href="https://www.youtube.com/channel/UCOa-WaNwQaoyFHLCDk7qKIw" target="_blank"><img src="imagens/logo-youtube.jpg" alt="youtube"></a>
@@ -32,5 +32,23 @@
     <footer>
         <p> Site criado por <a href="https://www.instagram.com/night_njr/" target="_blank">Nilson Junior</a>.</p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const title = document.querySelector("header > p");
+            const text = title.textContent;
+            let i = 0;
+            title.textContent = "";
+            function type() {
+                if (i < text.length) {
+                    title.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, 150);
+                }
+            }
+            type();
+        });
+            
+     
+    </script>
 </body>
 </html>
